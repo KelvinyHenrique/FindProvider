@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+            <div class="appLogo">
+                <span>Provider</span><span class="finderColor">Finder</span>
+            </div>
+            <div class="boxGetData">
+                <input  type="text" placeholder="Informe o código do fornecedor" id="providerCode">
+                <div class="btnEnviar" onclick="getProviders(document.getElementById('providerCode').value)">Enviar</div>
+            </div>
+           
+            <div class="box" id="box">
+
+                <div class="defaultTextBox">
+                    <p>Código do Fornecedor:</p>
+                    <p class="providerCode"></p>
+               </div>
+
+                <div class="defaultTextBox">
+                     <p>Razão Social:</p>
+                     <p class="providerReason">&nbsp ASABRANCA COM E DIST DE COSMETICOS LTDA</p>
+                </div>
+
+                <div class="defaultTextBox">
+                    <p>Nome Fantasia:</p>
+                    <p class="providerFantasy">&nbsp ABBOTT</p>
+               </div>
+
+               <div class="defaultTextBox">
+                <p>Status:</p>
+                <p class="providerStatus">&nbsp A</p>
+           </div>
+               
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
